@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-zp-p3o">
+                                <rect key="frame" x="122" y="54" width="131" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Ifu-Uy-g0g"/>
+                                    <constraint firstAttribute="height" constant="30" id="rnp-QZ-Wse"/>
+                                </constraints>
+                                <state key="normal" title="kxmovie"/>
+                                <connections>
+                                    <action selector="kxmovieBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEW-Eb-p1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4u-Hy-qlW">
+                                <rect key="frame" x="122" y="154" width="131" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Coz-Z9-IjK"/>
+                                    <constraint firstAttribute="width" constant="131" id="dl7-Lx-lU5"/>
+                                </constraints>
+                                <state key="normal" title="RTSPPlayer"/>
+                                <connections>
+                                    <action selector="rtspPlayerBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuk-WN-OPd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3d-bx-Gws">
+                                <rect key="frame" x="122" y="254" width="131" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Pj-yg-Wqo"/>
+                                    <constraint firstAttribute="width" constant="131" id="YVV-a9-Tjj"/>
+                                </constraints>
+                                <state key="normal" title="iFrameExtractor"/>
+                                <connections>
+                                    <action selector="iFrameExtractorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfk-cy-qNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O4u-Hy-qlW" firstAttribute="centerX" secondItem="LHw-zp-p3o" secondAttribute="centerX" id="9ae-k7-6Ac"/>
+                            <constraint firstItem="n3d-bx-Gws" firstAttribute="centerX" secondItem="LHw-zp-p3o" secondAttribute="centerX" id="Ejl-Ic-wwJ"/>
+                            <constraint firstItem="O4u-Hy-qlW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imx-3U-nyq"/>
+                            <constraint firstItem="n3d-bx-Gws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lg4-df-Q12"/>
+                            <constraint firstItem="LHw-zp-p3o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="122" id="LxI-Kq-ea8"/>
+                            <constraint firstItem="LHw-zp-p3o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RGs-Jk-og8"/>
+                            <constraint firstItem="n3d-bx-Gws" firstAttribute="top" secondItem="O4u-Hy-qlW" secondAttribute="bottom" constant="70" id="bEZ-7P-1e2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O4u-Hy-qlW" secondAttribute="trailing" constant="102" id="bqJ-7X-pjw"/>
+                            <constraint firstItem="O4u-Hy-qlW" firstAttribute="top" secondItem="LHw-zp-p3o" secondAttribute="bottom" constant="70" id="khX-W4-07a"/>
+                            <constraint firstItem="O4u-Hy-qlW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="102" id="pKf-sh-flR"/>
+                            <constraint firstAttribute="trailing" secondItem="LHw-zp-p3o" secondAttribute="trailing" constant="122" id="shx-jy-Z8t"/>
+                            <constraint firstItem="O4u-Hy-qlW" firstAttribute="top" secondItem="LHw-zp-p3o" secondAttribute="bottom" constant="70" id="xGV-2U-00x"/>
+                            <constraint firstItem="LHw-zp-p3o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="zCo-A6-eQz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bqJ-7X-pjw"/>
+                                <exclude reference="khX-W4-07a"/>
+                                <exclude reference="pKf-sh-flR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="285.5" y="242.5"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,9 @@
 		842686D51C46774600EBC2C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842686D31C46774600EBC2C7 /* Main.storyboard */; };
 		842686D71C46774600EBC2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842686D61C46774600EBC2C7 /* Assets.xcassets */; };
 		842686DA1C46774600EBC2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842686D81C46774600EBC2C7 /* LaunchScreen.storyboard */; };
+		846425161C4F1E3B003B7FA5 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 846425131C4F1E3B003B7FA5 /* Utilities.m */; };
+		846425171C4F1E3B003B7FA5 /* VideoFrameExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 846425151C4F1E3B003B7FA5 /* VideoFrameExtractor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		846425191C4F1E56003B7FA5 /* sophie.mov in Resources */ = {isa = PBXBuildFile; fileRef = 846425181C4F1E56003B7FA5 /* sophie.mov */; };
 		84CAEFC81C47C3EC0057572D /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFC11C47C3EC0057572D /* libavcodec.a */; };
 		84CAEFC91C47C3EC0057572D /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFC21C47C3EC0057572D /* libavdevice.a */; };
 		84CAEFCA1C47C3EC0057572D /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFC31C47C3EC0057572D /* libavfilter.a */; };
@@ -28,6 +31,12 @@
 		84CAEFE11C47C4880057572D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFE01C47C4880057572D /* libiconv.tbd */; };
 		84CAEFE31C47C4920057572D /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFE21C47C4920057572D /* libbz2.tbd */; };
 		84CAEFE51C47C4980057572D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAEFE41C47C4980057572D /* libz.tbd */; };
+		84FEC4291C4FC38D00332551 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4261C4FC38D00332551 /* AudioStreamer.m */; };
+		84FEC42A1C4FC38D00332551 /* RTSPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4281C4FC38D00332551 /* RTSPPlayer.m */; };
+		84FEC42E1C4FC45400332551 /* IFrameExtractorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC42C1C4FC45400332551 /* IFrameExtractorViewController.m */; };
+		84FEC42F1C4FC45400332551 /* IFrameExtractorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC42D1C4FC45400332551 /* IFrameExtractorViewController.xib */; };
+		84FEC4331C4FC46800332551 /* RTSPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4311C4FC46800332551 /* RTSPPlayerViewController.m */; };
+		84FEC4341C4FC46800332551 /* RTSPPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FEC4321C4FC46800332551 /* RTSPPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +50,11 @@
 		842686D61C46774600EBC2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842686D91C46774600EBC2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842686DB1C46774600EBC2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846425121C4F1E3B003B7FA5 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		846425131C4F1E3B003B7FA5 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		846425141C4F1E3B003B7FA5 /* VideoFrameExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFrameExtractor.h; sourceTree = "<group>"; };
+		846425151C4F1E3B003B7FA5 /* VideoFrameExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoFrameExtractor.m; sourceTree = "<group>"; };
+		846425181C4F1E56003B7FA5 /* sophie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sophie.mov; sourceTree = "<group>"; };
 		84CAEF5B1C47C3EC0057572D /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
 		84CAEF5C1C47C3EC0057572D /* avfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfft.h; sourceTree = "<group>"; };
 		84CAEF5D1C47C3EC0057572D /* d3d11va.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = d3d11va.h; sourceTree = "<group>"; };
@@ -157,6 +171,16 @@
 		84CAEFE01C47C4880057572D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		84CAEFE21C47C4920057572D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		84CAEFE41C47C4980057572D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84FEC4251C4FC38D00332551 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		84FEC4261C4FC38D00332551 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		84FEC4271C4FC38D00332551 /* RTSPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPPlayer.h; sourceTree = "<group>"; };
+		84FEC4281C4FC38D00332551 /* RTSPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPPlayer.m; sourceTree = "<group>"; };
+		84FEC42B1C4FC45400332551 /* IFrameExtractorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFrameExtractorViewController.h; sourceTree = "<group>"; };
+		84FEC42C1C4FC45400332551 /* IFrameExtractorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFrameExtractorViewController.m; sourceTree = "<group>"; };
+		84FEC42D1C4FC45400332551 /* IFrameExtractorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IFrameExtractorViewController.xib; sourceTree = "<group>"; };
+		84FEC4301C4FC46800332551 /* RTSPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPPlayerViewController.h; sourceTree = "<group>"; };
+		84FEC4311C4FC46800332551 /* RTSPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPPlayerViewController.m; sourceTree = "<group>"; };
+		84FEC4321C4FC46800332551 /* RTSPPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTSPPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,12 +226,20 @@
 		842686C91C46774600EBC2C7 /* FFmpegDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84FEC4241C4FC36E00332551 /* RTSPPlayer */,
+				846425111C4F1E3B003B7FA5 /* iFrameExtractor */,
 				84CAEFCF1C47C4430057572D /* kxmovie */,
 				84CAEF581C47C3EC0057572D /* FFmpeg-iOS */,
 				842686CD1C46774600EBC2C7 /* AppDelegate.h */,
 				842686CE1C46774600EBC2C7 /* AppDelegate.m */,
 				842686D01C46774600EBC2C7 /* ViewController.h */,
 				842686D11C46774600EBC2C7 /* ViewController.m */,
+				84FEC42B1C4FC45400332551 /* IFrameExtractorViewController.h */,
+				84FEC42C1C4FC45400332551 /* IFrameExtractorViewController.m */,
+				84FEC42D1C4FC45400332551 /* IFrameExtractorViewController.xib */,
+				84FEC4301C4FC46800332551 /* RTSPPlayerViewController.h */,
+				84FEC4311C4FC46800332551 /* RTSPPlayerViewController.m */,
+				84FEC4321C4FC46800332551 /* RTSPPlayerViewController.xib */,
 				842686D31C46774600EBC2C7 /* Main.storyboard */,
 				842686D61C46774600EBC2C7 /* Assets.xcassets */,
 				842686D81C46774600EBC2C7 /* LaunchScreen.storyboard */,
@@ -223,6 +255,18 @@
 				842686CB1C46774600EBC2C7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		846425111C4F1E3B003B7FA5 /* iFrameExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				846425181C4F1E56003B7FA5 /* sophie.mov */,
+				846425121C4F1E3B003B7FA5 /* Utilities.h */,
+				846425131C4F1E3B003B7FA5 /* Utilities.m */,
+				846425141C4F1E3B003B7FA5 /* VideoFrameExtractor.h */,
+				846425151C4F1E3B003B7FA5 /* VideoFrameExtractor.m */,
+			);
+			path = iFrameExtractor;
 			sourceTree = "<group>";
 		};
 		84CAEF581C47C3EC0057572D /* FFmpeg-iOS */ = {
@@ -424,6 +468,17 @@
 			path = kxmovie;
 			sourceTree = "<group>";
 		};
+		84FEC4241C4FC36E00332551 /* RTSPPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC4251C4FC38D00332551 /* AudioStreamer.h */,
+				84FEC4261C4FC38D00332551 /* AudioStreamer.m */,
+				84FEC4271C4FC38D00332551 /* RTSPPlayer.h */,
+				84FEC4281C4FC38D00332551 /* RTSPPlayer.m */,
+			);
+			path = RTSPPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +537,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FEC4341C4FC46800332551 /* RTSPPlayerViewController.xib in Resources */,
+				846425191C4F1E56003B7FA5 /* sophie.mov in Resources */,
+				84FEC42F1C4FC45400332551 /* IFrameExtractorViewController.xib in Resources */,
 				842686DA1C46774600EBC2C7 /* LaunchScreen.storyboard in Resources */,
 				84CAEFDC1C47C4430057572D /* kxmovie.bundle in Resources */,
 				842686D71C46774600EBC2C7 /* Assets.xcassets in Resources */,
@@ -497,10 +555,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CAEFDD1C47C4430057572D /* KxMovieDecoder.m in Sources */,
+				84FEC4291C4FC38D00332551 /* AudioStreamer.m in Sources */,
 				842686D21C46774600EBC2C7 /* ViewController.m in Sources */,
+				846425161C4F1E3B003B7FA5 /* Utilities.m in Sources */,
 				842686CF1C46774600EBC2C7 /* AppDelegate.m in Sources */,
+				84FEC42E1C4FC45400332551 /* IFrameExtractorViewController.m in Sources */,
 				84CAEFDF1C47C4430057572D /* KxMovieViewController.m in Sources */,
 				842686CC1C46774600EBC2C7 /* main.m in Sources */,
+				84FEC42A1C4FC38D00332551 /* RTSPPlayer.m in Sources */,
+				846425171C4F1E3B003B7FA5 /* VideoFrameExtractor.m in Sources */,
+				84FEC4331C4FC46800332551 /* RTSPPlayerViewController.m in Sources */,
 				84CAEFDB1C47C4430057572D /* KxAudioManager.m in Sources */,
 				84CAEFDE1C47C4430057572D /* KxMovieGLView.m in Sources */,
 			);

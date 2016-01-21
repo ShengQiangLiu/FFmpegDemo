@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "KxMovieViewController.h"
-
+#import "IFrameExtractorViewController.h"
+#import "RTSPPlayerViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,24 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
+/**
+ *  kxmovie example
+ */
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+
+}
+
+- (IBAction)kxmovieBtnClick:(UIButton *)sender
+{
     NSString *path = @"http://m1.26ts.com/bwsd64-AsiaMoviePass.mp4";
     
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
@@ -42,9 +53,14 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)rtspPlayerBtnClick:(UIButton *)sender
+{
+    [self presentViewController:[RTSPPlayerViewController new] animated:YES completion:nil];
+}
+
+- (IBAction)iFrameExtractorBtnClick:(UIButton *)sender
+{
+    [self presentViewController:[IFrameExtractorViewController new] animated:YES completion:nil];
 }
 
 @end
